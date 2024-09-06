@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import MainForm from "./common/MainForm";
+import MainPage from "./pages/MainPage";
+import KakaoMap from "./pages/map/KakaoMap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<MainForm />}>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/kakaomap" element={<KakaoMap />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
