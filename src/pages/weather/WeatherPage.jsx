@@ -25,7 +25,7 @@ const StyledIframe = styled.iframe`
   border: none;
 `;
 
-const KakaoMap = () => {
+const WeatherPage = () => {
   return (
     <>
       <Container>
@@ -40,4 +40,4 @@ const KakaoMap = () => {
   );
 };
 
-export default KakaoMap;
+export default WeatherPage;
