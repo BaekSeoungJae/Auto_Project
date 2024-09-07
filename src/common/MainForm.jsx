@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Background = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@ const Background = styled.div`
 
 const Header = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 10%;
   min-height: 85px;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ const Btn = styled(Link)`
 
 const Contents = styled.div`
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
 `;
 const MainForm = () => {
@@ -50,11 +50,11 @@ const MainForm = () => {
     <Background>
       <Header>
         <BtnDiv>
-          <Btn to="/">주식</Btn>
           <Btn to="/">설정</Btn>
+          <Btn to="/lspage">주식</Btn>
           <Btn to="/">홈</Btn>
           <Btn to="/kakaomap">지도</Btn>
-          <Btn to="/">날씨</Btn>
+          <Btn to="/weather">날씨</Btn>
         </BtnDiv>
       </Header>
       <Contents>

@@ -30,7 +30,10 @@ const KakaoMap = () => {
     <>
       <Container>
         <IframeContainer>
-          <StyledIframe src="https://map.kakao.com" title="kakaomap" />
+          <StyledIframe
+            src="https://www.weather.go.kr/w/index.do"
+            title="weather"
+          />
         </IframeContainer>
       </Container>
     </>

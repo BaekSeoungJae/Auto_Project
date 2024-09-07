@@ -12,8 +12,8 @@ const Container = styled.div`
 `;
 
 const IframeContainer = styled.div`
-  width: 80%;
-  height: 700px;
+  width: 90%;
+  height: 800px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
